@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  background-color: #001024;
+}
+
+#level-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
+  margin: 5rem;
+  color: #fef2bf;
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.btn {
+  margin: 0.1rem;
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  border: 0.8rem solid rgb(120, 122, 145);
+  border-radius: 20%;
+  cursor: pointer;
+}
+.circle {
+  background: #001024;
+  display: inline-block;
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  bottom: 10rem;
+  left: 38rem;
+  border: 0.8rem solid rgb(120, 122, 145);
+  z-index: 2;
+}
+
+.author {
+  color: #fef2bf;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 8.5rem;
+  left: 2rem;
+}
+
+.game-over {
+  background-color: #fa1e0e;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.red {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 124, 124, 1) 14%,
+    rgba(125, 25, 53, 1) 82%
+  );
+  border-radius: 0 100% 0 0;
+}
+
+.green {
+  background: linear-gradient(
+    90deg,
+    rgba(24, 77, 71, 1) 14%,
+    rgba(161, 222, 147, 1) 82%
+  );
+  border-radius: 100% 0 0 0;
+}
+
+.blue {
+  background: linear-gradient(
+    90deg,
+    rgba(112, 161, 215, 1) 14%,
+    rgba(15, 82, 186, 1) 82%
+  );
+  border-radius: 0 0 100% 0;
+}
+
+.yellow {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 183, 64, 1) 14%,
+    rgba(247, 244, 139, 1) 82%
+  );
+  border-radius: 0 0 0 100%;
+}
+
+.pressed {
+  box-shadow: 0 0 2rem white;
+  background-color: grey;
+}
