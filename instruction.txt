@@ -1,0 +1,13 @@
+
+Simon game rules:
+1. Press any key to start. 
+
+2. Simon will give the first signal. Repeat the signal by clicking the same color lens.
+
+3. Simon will duplicate the first signal and add one. Repeat these two signals by clicking the same color lenses, in order.
+
+4. Simon will duplicate these first two signals and add one.
+
+5. Continue playing as long as you can repeat each sequence of sig- nals correctly. 
+
+6. If you fail to repeat a sequence exactly, Simon responds with a "RAZZ" sound. This means you've lost, and the sequence of signals ends.

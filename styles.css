@@ -1,60 +1,87 @@
-* {
+:root {
+  --color-background: hsl(213, 100%, 7%);
+  --color-font: #fef2bf;
+  --color-game-over: #fa1e0e;
+  --lens-size: 27rem;
+  --trademark-size: 30rem;
+  --border-circle: 0.8rem solid rgb(120, 122, 145);
+  --white-shadow: 0 0 0.3rem white;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
+  box-sizing: content-box;
 }
 
 body {
-  text-align: center;
-  background-color: #001024;
-}
-
-#level-title {
   font-family: 'Permanent Marker', cursive;
-  font-size: 5rem;
-  margin: 5rem;
-  color: #fef2bf;
+  background-color: var(--color-background);
 }
 
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+
   position: relative;
-  width: 960px;
-  margin: 0 auto;
+}
+
+#level-title {
+  font-size: 5.8rem;
+  padding: 2.3rem;
+  margin-bottom: 2.7rem;
+  color: var(--color-font);
+}
+
+.color-lens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
   margin: 0.1rem;
   display: inline-block;
-  height: 20rem;
-  width: 20rem;
-  border: 0.8rem solid rgb(120, 122, 145);
+  height: var(--lens-size);
+  width: var(--lens-size);
+  border: var(--border-circle);
   border-radius: 20%;
   cursor: pointer;
 }
-.circle {
-  background: #001024;
-  display: inline-block;
+.color-lens_circle {
+  background: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  width: 20rem;
-  height: 20rem;
+  width: var(--trademark-size);
+  height: var(--trademark-size);
   border-radius: 50%;
-  bottom: 10rem;
-  left: 38rem;
-  border: 0.8rem solid rgb(120, 122, 145);
-  z-index: 2;
+  border: var(--border-circle);
+  z-index: 10;
+  margin: 0 auto;
+  flex: 1;
+  box-shadow: var(--white-shadow);
 }
 
-.author {
-  color: #fef2bf;
-  font-size: 1.5rem;
+.legal {
+  color: var(--color-font);
+  font-size: 2.3rem;
+  margin: 0 auto;
   position: absolute;
-  top: 8.5rem;
-  left: 2rem;
+  box-shadow: var(--white-shadow);
+  border-radius: 1rem;
+  background-color: var(--color-background);
 }
 
 .game-over {
@@ -70,6 +97,7 @@ body {
     rgba(125, 25, 53, 1) 82%
   );
   border-radius: 0 100% 0 0;
+  box-shadow: var(--white-shadow);
 }
 
 .green {
@@ -79,6 +107,7 @@ body {
     rgba(161, 222, 147, 1) 82%
   );
   border-radius: 100% 0 0 0;
+  box-shadow: var(--white-shadow);
 }
 
 .blue {
@@ -88,6 +117,7 @@ body {
     rgba(15, 82, 186, 1) 82%
   );
   border-radius: 0 0 100% 0;
+  box-shadow: var(--white-shadow);
 }
 
 .yellow {
@@ -97,6 +127,7 @@ body {
     rgba(247, 244, 139, 1) 82%
   );
   border-radius: 0 0 0 100%;
+  box-shadow: var(--white-shadow);
 }
 
 .pressed {
